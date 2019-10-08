@@ -1,6 +1,9 @@
+/* eslint-disable */
 import React, { useEffect, useRef } from "react"
 import * as d3 from "d3"
 import "../styles.css"
+import ColorSizeLegends from "../ColorSizeLegends/ColorSizeLegends";
+import ChoroplethLegend from "./ChoroplethLegend";
 
 const ChoroplethMap = props => {
     const ref = useRef(null);
@@ -10,30 +13,14 @@ const ChoroplethMap = props => {
         const tsv = props.tsv;
         const svg = d3.select(ref.current);
 
-        //creates a new object, countryName and runs through the tsv data and binds the country name in the d (in this case the jsonData) 
-        //to countryName where the id is = to the corresponding iso_n3
+        //creates a new object, rowById and runs through the tsv data and binds the all the data in the d (in this case the jsonData) 
+        //to rowById where the id is = to the corresponding iso_n3
 
-        // const countryName = {};
-        // tsv.forEach(d => { //takes a row of the table
-        //     countryName[d.iso_n3] = d.name; //uses d.iso_n3 as the key
-        // })
-
-        //using reduce yields the same result as the pattern above
-        const countryName = tsv.reduce((accumulator, d) => {
-            accumulator[d.iso_n3] = d.name; //accumulator at this key is this value
+        const rowById = tsv.reduce((accumulator, d) => {
+            accumulator[d.iso_n3] = d; //accumulator at this key is this value
             return accumulator;
         }, {}); //the second argument, the empty {} is the initial value for the accumulator for each row, d
 
-
-        const subRegion = {};
-        tsv.forEach(d => {
-            subRegion[d.iso_n3] = d.subregion;
-        })
-
-        //change the projection to change the entire map layout
-        // const projection = d3.geoMercator();
-        // const projection = d3.geoOrthographic();
-        // const projection = d3.geoStereographic();
         const projection = d3.geoNaturalEarth1();
 
         const pathGenerator = d3.geoPath().projection(projection);
@@ -53,19 +40,31 @@ const ChoroplethMap = props => {
                 .on('zoom', () => {
                     g.attr('transform', d3.event.transform);
                 }))
+            
+            //binds json data to all tsv data by id
+            const countries = data;
+            countries.features.forEach(d => {
+                Object.assign(d.properties, rowById[d.id])
+            })
 
-            const paths = g.selectAll('path')
-                .data(data.features);
+            const colorScale = d3.scaleOrdinal();
+            const colorValue = d => d.properties.economy;
 
-            paths.enter().append('path')
+            colorScale
+                .domain(countries.features.map(colorValue)) //maps out the colorScale to the colorValue
+                .domain(colorScale.domain().sort().reverse()) // puts the mapped domain values from colorValue in order
+                .range(d3.schemeSpectral[colorScale.domain().length]);
+
+            g.selectAll('path')
+                .data(data.features)
+                .enter().append('path')
                 .attr('class', 'country')
                 .attr('d', pathGenerator)
-                .attr('fill', '#088028')
+                .attr('fill', d => colorScale(colorValue(d)))
                 .attr('stroke', 'black')
                 .attr('stroke-width', .05)
                 .append('title')
-                    // .text(d => subRegion[d.id]) //alternative test
-                    .text(d => countryName[d.id]); //since the d.id matches the iso_n3, countryName will return the d.name
+                    .text(d => d.properties.name + ': ' + colorValue(d)); //since the d.id matches the iso_n3, countryName will return the d.name
         }
 
         render(data);
@@ -75,6 +74,7 @@ const ChoroplethMap = props => {
         <div>
             <svg width={props.width} height={props.height}>
                 <g ref={ref} />
+                <ChoroplethLegend />
             </svg>
         </div>
     )

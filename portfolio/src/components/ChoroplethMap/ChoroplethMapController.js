@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState, useEffect } from "react"
 import ChoroplethMap from "./ChoroplethMap"
 import "../styles.css"

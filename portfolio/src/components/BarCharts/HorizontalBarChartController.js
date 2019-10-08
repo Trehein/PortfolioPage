@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState, useEffect } from "react";
 import HorizontalBarChart from "./HorizontalBarChart";
 import "../styles.css";

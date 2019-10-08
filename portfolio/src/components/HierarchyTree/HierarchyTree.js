@@ -1,6 +1,5 @@
-//tutorial starts at 7:37ish
 //Data structure gets wonky at N.A. which is why the branches don't stretch all the way to the right could fix
-
+/* eslint-disable */
 import React, { useEffect, useRef } from "react"
 import * as d3 from "d3"
 

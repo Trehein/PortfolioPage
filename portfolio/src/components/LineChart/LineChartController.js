@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState, useEffect } from "react"
 import LineChart from "./LineChart"
 import "../styles.css"
