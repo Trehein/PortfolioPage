@@ -62,11 +62,11 @@ const CollapsibleWeb = props => {
                     .attr('stroke-width', 2)
                     .style('fill', color)
                     .style('opacity', 1)
-                    // .on('click', clicked)
-                    // .call(d3.drag()
-                    // .on('start', dragstarted)
-                    // .on('drag', dragged)
-                    // .on('end', dragended))
+                    .on('click', clicked)
+                    .call(d3.drag()
+                    .on('start', dragStarted)
+                    .on('drag', dragged)
+                    .on('end', dragended))
 
                 nodeEnter.append('circle')
                     .attr("r", d => Math.sqrt(d.data.size) / 10 || 4.5)
@@ -128,36 +128,36 @@ const CollapsibleWeb = props => {
             }
 
             //events
-            // function clicked(d) {
-            //     if(!d3.event.defaultPrevented) {
-            //         if (d.children) {
-            //             d._children = d.children;
-            //             d.children = null;
-            //           } else {
-            //             d.children = d._children;
-            //             d._children = null;
-            //           }
-            //           update()
-            //         }
-            //     }
-            // }
+            function clicked(d) {
+                if(!d3.event.defaultPrevented) {
+                    if (d.children) {
+                        d._children = d.children;
+                        d.children = null;
+                      } else {
+                        d.children = d._children;
+                        d._children = null;
+                      }
+                      update()
+                    }
+                }
 
-            // dragStarted = d => {
-            //     if (!d3.event.active) simulation.alphaTarget(0.3).restart()
-            //     d.fx = d.x
-            //     d.fy = d.y
-            // }
+            function dragStarted(d) {
+                if (!d3.event.active) simulation.alphaTarget(0.3).restart()
+                d.fx = d.x
+                d.fy = d.y
+            }
 
-            // dragged = d => {
-            //     d.fx = d3.event.x
-            //     d.fy = d3.event.y
-            // }
+            function dragged(d) {
+                d.fx = d3.event.x
+                d.fy = d3.event.y
+            }
 
-            // dragended = d => {
-            //     if (!d3.event.active) simulation.alphaTarget(0)
-            //     d.fx = null
-            //     d.fy = null
-            // }
+            function dragended(d) {
+                if (!d3.event.active) simulation.alphaTarget(0)
+                d.fx = null
+                d.fy = null
+            }
+
             update()
         }
 
