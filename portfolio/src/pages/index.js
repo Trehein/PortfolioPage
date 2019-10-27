@@ -1,6 +1,5 @@
 import React from "react"
 import ChartController from "../ChartController";
-import {WebContainer} from "../components/Webs"
 // import WiMapController from "../WiMapController";
 import { useFetch } from "../hooks";
 import "../components/styles.css";
@@ -42,7 +41,6 @@ function IndexPage() {
           {/* <Button>Test</Button> */}
           <ChartController data={data} /> 
           {/* <WiMapController mapData={mapData} foodAssistData={foodAssistData} /> */}
-          <WebContainer/>
         </Layout>
       </div>
     );
