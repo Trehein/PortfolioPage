@@ -13,7 +13,7 @@ const WebController = props => {
     return (
         <div>
             <div className="webBox">
-                <CollapsibleWeb data={data} width={800} height={1000} />
+                <CollapsibleWeb data={data} width={800} height={400} />
             </div>
         </div>
     )
