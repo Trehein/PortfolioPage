@@ -24,7 +24,7 @@ const CollapsibleWeb = props => {
 
             const simulation = d3.forceSimulation()
                 .force('link', d3.forceLink().id(d => d.id))
-                .force('charge', d3.forceManyBody().strength(-55).distanceMax(250))
+                .force('charge', d3.forceManyBody().strength(-50).distanceMax(250))
                 .force('center', d3.forceCenter( innerWidth/2, innerHeight/4 ))
                 .on('tick', ticked)
 
@@ -157,7 +157,6 @@ const CollapsibleWeb = props => {
                 d.fx = null
                 d.fy = null
             }
-
             update()
         }
 

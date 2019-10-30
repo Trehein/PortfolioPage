@@ -21,7 +21,8 @@ class SiteLinks extends React.Component {
                         { text: "Hierarchy Tree", link: '/hierarchyTreePage'},
                         { text: "Color and Size Legends", link: '/colorSizeLegendsPage'},
                         { text: "Choropleth Map", link: '/choroplethMapPage'},
-                        { text: "Collapsible Web", link: '/collapsibleWebPage'}
+                        { text: "Collapsible Web", link: '/collapsibleWebPage'},
+                        { text: "Heiness Skill Matrix", link: '/heinessSkillMatrix'}
                     ].map((site, index) => (
                         <ListItem button key={index} component={ Link } to={site.link}>
                             <ListItemText primary={site.text} />

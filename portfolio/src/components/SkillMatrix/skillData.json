@@ -1,0 +1,323 @@
+{
+    "units" : [
+        {
+            "category": "Foot Soldiers",
+            "types": [
+                {
+                    "name": "Infantry",
+                    "skills": [
+                        {
+                            "desc": "description 1",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 2",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 3",
+                            "players": [6]
+                        }
+                    ]
+                },
+                {
+                    "name": "Marines",
+                    "skills": [
+                        {
+                            "desc": "description 1",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 2",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 3",
+                            "players": [6]
+                        }
+                    ]
+                },
+                {
+                    "name": "Rangers",
+                    "skills": [
+                        {
+                            "desc": "description 1",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 2",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 3",
+                            "players": [6]
+                        }
+                    ]
+                },
+                {
+                    "name": "Airborne",
+                    "skills": [
+                        {
+                            "desc": "description 1",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 2",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 3",
+                            "players": [6]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Defensive",
+            "types": [
+                {
+                    "name": "Artillery",
+                    "skills": [
+                        {
+                            "desc": "description 1",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 2",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 3",
+                            "players": [6]
+                        }
+                    ]
+                },
+                {
+                    "name": "Anti-Air",
+                    "skills": [
+                        {
+                            "desc": "description 1",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 2",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 3",
+                            "players": [6]
+                        }
+                    ]
+                },
+                {
+                    "name": "Anti-tank",
+                    "skills": [
+                        {
+                            "desc": "description 1",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 2",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 3",
+                            "players": [6]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Armor",
+            "types": [
+                {
+                    "name": "Light Tank",
+                    "skills": [
+                        {
+                            "desc": "description 1",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 2",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 3",
+                            "players": [6]
+                        }
+                    ]
+                },
+                {
+                    "name": "Heavy Tank",
+                    "skills": [
+                        {
+                            "desc": "description 1",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 2",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 3",
+                            "players": [6]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Navy",
+            "types": [
+                {
+                    "name": "Destroyer",
+                    "skills": [
+                        {
+                            "desc": "description 1",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 2",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 3",
+                            "players": [6]
+                        }
+                    ]
+                },
+                {
+                    "name": "Submarine",
+                    "skills": [
+                        {
+                            "desc": "description 1",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 2",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 3",
+                            "players": [6]
+                        }
+                    ]
+                },
+                {
+                    "name": "Battleship",
+                    "skills": [
+                        {
+                            "desc": "description 1",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 2",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 3",
+                            "players": [6]
+                        }
+                    ]
+                },
+                {
+                    "name": "Carrier",
+                    "skills": [
+                        {
+                            "desc": "description 1",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 2",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 3",
+                            "players": [6]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Aircraft",
+            "types": [
+                {
+                    "name": "Fighter",
+                    "skills": [
+                        {
+                            "desc": "description 1",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 2",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 3",
+                            "players": [6]
+                        }
+                    ]
+                },
+                {
+                    "name": "Close Air Support",
+                    "skills": [
+                        {
+                            "desc": "description 1",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 2",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 3",
+                            "players": [6]
+                        }
+                    ]
+                },
+                {
+                    "name": "Bomber",
+                    "skills": [
+                        {
+                            "desc": "description 1",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 2",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 3",
+                            "players": [6]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Base",
+            "types": [
+                {
+                    "name": "Base",
+                    "skills": [
+                        {
+                            "desc": "description 1",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 2",
+                            "players": [6]
+                        },
+                        {
+                            "desc": "description 3",
+                            "players": [6]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
