@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import SkillMatrix from "./SkillMatrix"
 import "../styles.css"
 import skillData from "./skillData.json"
