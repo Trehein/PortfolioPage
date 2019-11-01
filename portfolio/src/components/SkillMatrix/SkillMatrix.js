@@ -1,29 +1,52 @@
-import React, { useEffect, useRef } from "react"
-// import * as d3 from "d3";
+import React from "react"
+// import "../styles.css"
+import skillData from "./skillData.json"
 
-const SkillMatrix = props => {
-    const ref = useRef(null);
+class SkillMatrix extends React.Component {
+    render() {
+        return (
+            <div>
+                <div className="webBox">
+                    <TypeGrid />
+                </div>
+            </div>
+        )
+    }
+}
 
-    useEffect(() => {
-        const data = props.data;
-        // const svg = d3.select(ref.current);
-        // const margin = { top: 20, right: 20, bottom: 20, left: 20 }
-        // const innerWidth = props.width - margin.left - margin.right;
-        // const innerHeight = props.width - margin.top - margin.bottom;
-        console.log(data);
+class TypeGrid extends React.Component {
+    renderSquare(i) {
+        return (
+            <Square
+                value={this.props.squares[i]}
+                onClick={() => this.props.onClick(i)}
+            />
+        );
+    }
 
-        const render = data => {
+    render() {
+        const data = skillData;
+        console.log(data.units[0].types)
 
-        }
-        render(data);
-    }, [props.data, props.width]);
+        return (
+            <div>
+                <div>
+                    {data.units[0].types.map((unit, index) => (
+                        <div key={index}>
+                            {unit.name}
+                        </div>
+                    ))}
+                </div>
+            </div>
+        )
+    }
+}
 
+function Square(props) {
     return (
-        <div>
-            <svg width={props.width} height={props.height}>
-                <g ref={ref} />
-            </svg>
-        </div>
+        <button className="square" onClick={props.onClick}>
+            {props.value}
+        </button>
     )
 }
 

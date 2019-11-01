@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from '../components/layout'
 import "../components/styles.css";
-import SkillMatrixController from "../components/SkillMatrix/SkillMatrixController"
+import SkillMatrix from "../components/SkillMatrix/SkillMatrix"
 
 function HeinessSkillMatrixPage() {
     return (
         <div className="App">
             <Layout>
-                <SkillMatrixController />
+                <SkillMatrix />
             </Layout>
         </div>
     )
