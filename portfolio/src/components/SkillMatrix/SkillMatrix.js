@@ -17,14 +17,6 @@ class SkillMatrix extends React.Component {
                 '#64dd17', '#558b2f', '#33691e',
                 '#8c9eff', '#536dfe', '#304ffe',
             ],
-            unitTypeContainerBg: [
-                '#bbdefb',
-                '#ffecb3',
-                '#212121',
-                '#e0e0e0',
-                '#0d47a1',
-                '#ff9e80',
-            ]
         }
     }
 
@@ -33,10 +25,20 @@ class SkillMatrix extends React.Component {
             console.log(unitType);
             switch (unitType) {
                 case 'Troops':
+                    return ('#b2dfdb')
+                case 'Defensive':
+                    return ('#ff9e80')
+                case 'Armor':
+                    return ('#ea80fc')
+                case 'Navy':
+                    return ('#2196f3')
+                case 'Aircraft':
+                    return ('#ffc107')
+                case 'Base':
                     return ('#bbdefb')
-                    break;
+                default:
+                    return ('bbdefb')
             }
-
         }
 
         return (
@@ -58,11 +60,12 @@ function UnitTypeContainer(props) {
     return (
         <Flex 
             width={[1]}
+            p={1}
         >
         <Box
             p={1}
             fontSize={3}
-            width={1}
+            width={1/6}
             color='black'
             bg={bgColor}>
             {unitType.category}
