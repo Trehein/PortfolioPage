@@ -8,15 +8,15 @@
                     "skills": [
                         {
                             "desc": "description 1",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 2",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 3",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         }
                     ]
                 },
@@ -25,15 +25,15 @@
                     "skills": [
                         {
                             "desc": "description 1",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 2",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 3",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         }
                     ]
                 },
@@ -42,15 +42,15 @@
                     "skills": [
                         {
                             "desc": "description 1",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 2",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 3",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         }
                     ]
                 },
@@ -59,15 +59,15 @@
                     "skills": [
                         {
                             "desc": "description 1",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 2",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 3",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         }
                     ]
                 }
@@ -81,15 +81,15 @@
                     "skills": [
                         {
                             "desc": "description 1",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 2",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 3",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         }
                     ]
                 },
@@ -98,15 +98,15 @@
                     "skills": [
                         {
                             "desc": "description 1",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 2",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 3",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         }
                     ]
                 },
@@ -115,15 +115,15 @@
                     "skills": [
                         {
                             "desc": "description 1",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 2",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 3",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         }
                     ]
                 }
@@ -137,15 +137,15 @@
                     "skills": [
                         {
                             "desc": "description 1",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 2",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 3",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         }
                     ]
                 },
@@ -154,15 +154,15 @@
                     "skills": [
                         {
                             "desc": "description 1",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 2",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 3",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         }
                     ]
                 }
@@ -176,15 +176,15 @@
                     "skills": [
                         {
                             "desc": "description 1",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 2",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 3",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         }
                     ]
                 },
@@ -193,15 +193,15 @@
                     "skills": [
                         {
                             "desc": "description 1",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 2",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 3",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         }
                     ]
                 },
@@ -210,15 +210,15 @@
                     "skills": [
                         {
                             "desc": "description 1",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 2",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 3",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         }
                     ]
                 },
@@ -227,15 +227,15 @@
                     "skills": [
                         {
                             "desc": "description 1",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 2",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 3",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         }
                     ]
                 }
@@ -249,15 +249,15 @@
                     "skills": [
                         {
                             "desc": "description 1",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 2",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 3",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         }
                     ]
                 },
@@ -266,15 +266,15 @@
                     "skills": [
                         {
                             "desc": "description 1",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 2",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 3",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         }
                     ]
                 },
@@ -283,15 +283,15 @@
                     "skills": [
                         {
                             "desc": "description 1",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 2",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 3",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         }
                     ]
                 }
@@ -305,15 +305,15 @@
                     "skills": [
                         {
                             "desc": "description 1",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 2",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         },
                         {
                             "desc": "description 3",
-                            "players": [6]
+                            "players": [false, false, false, false, false, false]
                         }
                     ]
                 }
