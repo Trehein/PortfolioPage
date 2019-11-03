@@ -1,19 +1,29 @@
 import React from 'react'
-import { Flex, Box } from 'rebass'
+import { Box, Flex } from 'rebass'
+import SkillsContainer from './SkillsContainer'
 
 function TypeContainer(props) {
     let data = props.data;
-    console.log(data);
+    // console.log(data.types);
     return (
-        <div>
-            <Flex width={4/5}>
-                <Box
-                    width={1/5}
-                >
-                    {data.name}
-                </Box>
-            </Flex>
-        </div>
+        <Flex flexWrap='wrap' width={4/5}>
+            {
+                data.types.map((type, index) => (
+                    <Flex
+                        key={index}
+                        width={1}
+                    >
+                        <Box 
+                            width={1/4}
+                            p={1}
+                        >
+                            {type.name}
+                        </Box>
+                        <SkillsContainer data={type} />
+                    </Flex>
+                ))
+            }
+        </Flex>
     )
 }
 

@@ -31,11 +31,7 @@ function UnitContainer(props) {
             p={1}
         >
             <CategoryBox unitType={unitType.category} bgColor={ unitTypeColor(unitType.category) }/>
-            {
-                unitType.types.map((data, index) => (
-                    <TypeContainer data={data} key={index} />
-                ))
-            }
+            <TypeContainer data={unitType} />
         </Flex>
     )
 }
