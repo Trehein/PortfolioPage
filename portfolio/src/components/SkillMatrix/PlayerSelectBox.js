@@ -4,21 +4,22 @@ import { Box } from 'rebass'
 function skillSelectColor (index) {
     console.log(index)
     switch (index) {
-        case (index === 0):
+        case 0:
             console.log('match found')
             return ('#A5D6A7')
-        case (index === 1):
+        case 1:
             return ('#263238')
-        // case (index == 2):
-        //     return ('#FFCC80')
-        // case (index == 3):
-        //     return ('#90CAF9')
-        // case (index == 4):
-        //     return ('#A5D6A7')
-        // case (index == 5):
-        //     return ('#FFF59D')
+        case 2:
+            return ('#FFCC80')
+        case 3:
+            return ('#90CAF9')
+        case 4:
+            return ('#A5D6A7')
+        case 5:
+            return ('#FFF59D')
         default:
-            console.log('No match found')
+            // console.log('No match found')
+            console.log(index)
             return ('#FFCC80')
     }
 }
